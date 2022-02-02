@@ -5,9 +5,12 @@ provider:
   runtime: nodejs14.x
   region: ap-northeast-2
 
+package:
+  individually: true
+
 plugins:
   - serverless-offline
-  - serverless-plugin-typescript
+  - serverless-webpack
 
 functions:
   hello:
